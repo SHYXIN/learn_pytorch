@@ -16,7 +16,3 @@ example_2 = torch.randint(low=0, high=2, size=(3,3)).type(torch.FloatTensor)
 
 print(example_1)
 print(example_2)
-
-
-
-
