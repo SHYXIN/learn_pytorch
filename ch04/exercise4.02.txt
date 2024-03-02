@@ -1,0 +1,19 @@
+1. After the first convolutional layer:
+output_width/height = ((256 - 3)+2*1)/1 + 1=256
+output_channeal = 16 filters were applied
+output_matrix_size = 256 * 256 * 16
+
+2. After the first pooling layer:
+output_width/height = (256-2)/2 + 1 = 128
+output_channels = 16 as pooling does not affect the number of channels
+output_matrix_size = 128 * 128 *16
+
+3.After the second convolutional layer:
+output_width/height = ((128 - 7) + 2 * 3)/1 +1 =128
+output_channels = 8 filters were applied
+output_matrix_size = 128 * 128 * 8
+
+4. After the second pooling layer:
+output_width/height = (128-2)/2 + 1= 64
+output_channels = 8 as pooling does not affect the number channels
+output_matrix_size = 64 * 64 *8

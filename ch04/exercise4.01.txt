@@ -1,0 +1,28 @@
+# Exercise 4.01: Calculating the Output Shape of a Convolutional Layer
+# 1. Calculate the output shape of a matrix derived from a convolutional layer with
+# an input of shape 64 x 64 x 3 and a filter of shape 3 x 3 x 3:
+
+Output_height = 64 - 3 + 1 = 62
+Output width = 64 - 3 + 1 = 62
+output depth = 1
+
+# 2.Calculate the output shape of a matrix derived from a convolutional layer with
+# an input of shape 32 x 32 x 3, 10 filters of shape 5 x 5 x 3, and padding of 2:
+
+Output height = 32 - 5 + ( 2 * 2 ) + 1 = 32
+Output width = 32 - 5 + (2 * 2) + 1 = 32
+output depth = 10
+
+# 3. Calculate the output shape of a matrix derived from a convolutional layer with
+# an input of shape 128 x 128 x 1, five filters of shape 5 x 5 x 1, and stride of 3
+Output height = (128 - 5) / 3 + 1 = 42
+Output width = (128 - 5) / 3 + 1 = 42
+Output depth = 5
+
+# 4. Calculate the output shape of a matrix derived from a convolutional layer with
+# an input of shape 64 x 64 x 1, a filter of shape 8 x 8 x 1, padding of 3, and a stride
+# of 3:
+Output height = ((64 - 8) + 2 * 3) / 3 + 1 ≈ 21.6 = 21  # 向下四舍五入
+Output width = ((64 - 8) + 2 * 3) /3 + 1 ≈ 21.6 = 21
+Output = 1
+
